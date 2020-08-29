@@ -1,0 +1,123 @@
+.banner {
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+
+.line {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 10px;
+        background-color: #fb973b;
+        position: absolute;
+        bottom: 14px;
+        z-index: -1;
+    }
+}
+
+.orange {
+    color: #fb973b;
+    font-weight: 700;
+}
+
+.container {
+    width: 1250px;
+    margin: 0 auto;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 28px;
+
+        .nav__item {
+            display: flex;
+
+            a {
+                text-decoration: none;
+                color: #616161;
+                font-size: 18px;
+            }
+
+            .nav__link:not(:last-child) {
+                margin-left: 75px;
+            }
+
+            .nav__tel {
+                margin-left: 115px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .banner__info {
+        margin-top: 100px;
+        display: flex;
+
+        .banner__title {
+            font-size: 60px;
+            font-weight: 700;
+
+            
+
+            .banner__text {
+                margin-top: 35px;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 150%;
+            }
+
+            .form {
+                margin-top: 45px;
+                border: 1px solid #e1e1e1;
+                width: 58%;
+
+                &__label {
+                    display: flex;
+
+                }
+
+                &__input {
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    font-size: 18px;
+                    padding: 20px 10px;
+                    background-color: #f8f8f8;
+
+                    &::placeholder {
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+
+                &__btn {
+                    font-size: 18px;
+                    padding: 20px 50px;
+                    background-color: #fb973b;
+                    border: none;
+                    color: #ffffff;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .cow {
+            position: absolute;
+            right: 65px;
+            top: 120px;
+        }
+    }
+
+    .first__line {
+        
+    }
+}

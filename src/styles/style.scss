@@ -1,0 +1,22 @@
+@import 'normalize';
+@import 'banner';
+@import 'about';
+@import 'coop';
+@import 'media';
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+}
